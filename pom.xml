@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>nz.ac.auckland</groupId>
+    <artifactId>uoa-parent</artifactId>
+    <version>1.8</version>
+  </parent>
+  <groupId>nz.ac.auckland.composite</groupId>
+  <artifactId>composite-spring-test</artifactId>
+  <version>5.2-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>composite-spring-test</name>
+  <description>
+    Collection of the standard spring dependencies - this one is for *testing*.
+  </description>
+  <properties>
+    <spring.version>3.2.1.RELEASE</spring.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${spring.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-core</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>nz.ac.auckland.composite</groupId>
+      <artifactId>composite-unittest</artifactId>
+      <version>[2,)</version>
+    </dependency>
+  </dependencies>
+</project>
