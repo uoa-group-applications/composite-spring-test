@@ -10,7 +10,7 @@
 	
 	<groupId>nz.ac.auckland.composite</groupId>
 	<artifactId>composite-spring-test</artifactId>
-	<version>5.2</version>
+	<version>5.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>composite-spring-test</name>
 	
@@ -26,7 +26,7 @@
 		<url>https://github.com/uoa-group-applications/composite-spring-test</url>
 		<connection>scm:git:https://github.com/uoa-group-applications/composite-spring-test.git</connection>
 		<developerConnection>scm:git:git@github.com:uoa-group-applications/composite-spring-test.git</developerConnection>
-	  <tag>composite-spring-test-5.2</tag>
+	  <tag>HEAD</tag>
   </scm>
 	
 	<dependencies>
